@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Proj</title>
+  </head>
+  <body>
+    <div class="Main">
+      <span class="loading"><h1>Quizz</h1></span>
+      <div class="Main-app" id="Main">
+        <button class="btn-lg btn-primary" id="join-game" onclick="joinGame()">
+          Join New Game
+        </button>
+
+        <button class="btn-lg btn-danger" id="new-game">
+          Create New Game (Need to Sign in)
+        </button>
+
+        <div class="user-controller">
+          <button class="btn-lg btn-success" onclick="signIn()" id="signin">
+            Sign in
+          </button>
+          <button class="btn-lg btn-success" id="logIn" onclick="logIn()">
+            Log in
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="test.js"></script>
+  </body>
+</html>

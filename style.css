@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;400;600&display=swap");
+
+body {
+  font-family: "Mitr", sans-serif;
+}
+
+#app-name {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.section-title {
+  font-size: 1.2em;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.section-subtitle {
+  font-size: 0.8em;
+  font-weight: lighter;
+  line-height: 80%;
+}
+
+#member-list {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+#main-table {
+  padding: 0;
+  width: 100%;
+  background: #eee;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+#main-table>thead {
+  background: #555;
+  color: white;
+}
+
+#main-table>thead>tr>th {
+  font-weight: lighter;
+  text-align: left;
+}
+
+#main-table td,
+#main-table th {
+  padding: 5px 10px;
+  font-weight: lighter;
+}
+
+#item-to-add,
+#name-to-add,
+#price-to-add {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+.delete-row,
+#add-newrow {
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background: white;
+  width: 60px;
+  cursor: pointer;
+}
+
+.delete-row:hover,
+#add-newrow:hover {
+  background: rgb(255, 200, 105);
+  color: white;
+}
+
+.Main-app {
+  border: 1px solid black;
+
+}
+
+.Main {
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Main-app button {
+  width: 100%;
+  height: 25%;
+  margin-bottom: 2.5%;
+
+}
+
+.user-controller {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: auto;
+  height: 10%;
+  background-color: lightblue;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 300px) {
+  .user-controller {
+    flex-direction: column;
+    height: 20%;
+  }
+}
+
+.user-controller button {
+  width: auto;
+  height: 100%;
+
+}
+
+.Main label {
+  margin-right: 1.25%;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.left-down-btn {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 10%;
+  height: 10%;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid #dddddd;
+  border-top-color: lightgreen;
+  border-bottom-color: lightgreen;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+.room-line {
+  /* height: 6.7rem; */
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#btn-zone {
+  margin: 1% 2%;
+  height: fit-content;
+
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-lg {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+}
+
+.btn-warning {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-warning:not(:disabled):not(.disabled).active:focus,
+.btn-warning:not(:disabled):not(.disabled):active:focus,
+.show>.btn-warning.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgb(222 170 12 / 50%);
+}
+
+.btn-warning:not(:disabled):not(.disabled).active,
+.btn-warning:not(:disabled):not(.disabled):active,
+.show>.btn-warning.dropdown-toggle {
+  color: #212529;
+  background-color: #d39e00;
+  border-color: #c69500;
+}
+
+.btn-warning.focus,
+.btn-warning:focus {
+  box-shadow: 0 0 0 0.2rem rgb(222 170 12 / 50%);
+}
+
+.btn-warning:hover {
+  color: #212529;
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.show>.btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(72, 180, 97, .5);
+}
+
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show>.btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #1e7e34;
+  border-color: #1c7430;
+}
+
+.btn-success.focus,
+.btn-success:focus {
+  box-shadow: 0 0 0 .2rem rgba(72, 180, 97, .5);
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgb(38 143 255 / 50%);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgb(38 143 255 / 50%);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:not(:disabled):not(.disabled).active:focus,
+.btn-danger:not(:disabled):not(.disabled):active:focus,
+.show>.btn-danger.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgb(225 83 97 / 50%);
+}
+
+.btn-danger:not(:disabled):not(.disabled).active,
+.btn-danger:not(:disabled):not(.disabled):active,
+.show>.btn-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #bd2130;
+  border-color: #b21f2d;
+}
+
+.btn-danger.focus,
+.btn-danger:focus {
+  box-shadow: 0 0 0 0.2rem rgb(225 83 97 / 50%);
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button {
+  border-radius: 0;
+}
+
+select {
+  word-wrap: normal;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}

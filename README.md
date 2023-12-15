@@ -7,3 +7,7 @@ mirror of my com eng ess project
 - Napat Srithavalya
 - Natthaphon Suphansri
 
+**Other Assets**
+[Slide Presentation](Slide-Presentation.pdf)
+
+[Report](CEE%20Report.pdf)

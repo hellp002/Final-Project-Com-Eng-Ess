@@ -2,8 +2,8 @@
 mirror of my com eng ess project
 
 **Member**
--Werapat Wangrungroj
--Chakkrit Jongkraijak
--Napat Srithavalya
--Natthaphon Suphansri
+- Werapat Wangrungroj
+- Chakkrit Jongkraijak
+- Napat Srithavalya
+- Natthaphon Suphansri
 

@@ -1,2 +1,9 @@
-# Final-Project-Com-Eng-Ess
+# Final-Project-Com-Eng-Ess 2/2021
 mirror of my com eng ess project
+
+**Member**
+-Werapat Wangrungroj
+-Chakkrit Jongkraijak
+-Napat Srithavalya
+-Natthaphon Suphansri
+
